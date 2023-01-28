@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="735.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.DashboardController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1102.0" layoutX="14.0" opacity="0.72" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Pictures/BG/best-hotel-views-in-the-world-2%20(2).jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="969.0" layoutY="43.0" onAction="#signout" ripplerFill="#63a7ff" style="-fx-border-color: black;" text="Sign out">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/logout%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXButton>
+      <Button id="windows8" layoutX="65.0" layoutY="160.0" mnemonicParsing="false" onAction="#mRoom" prefHeight="208.0" prefWidth="216.0" style="-fx-background-radius: 20;" stylesheets="@dashboard.css" AnchorPane.leftAnchor="65.0">
+         <graphic>
+            <Pane prefHeight="200.0" prefWidth="200.0" stylesheets="@dashboard.css">
+               <children>
+                  <Text layoutX="5.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Room" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="104.0" fitWidth="106.0" layoutX="26.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/Dashboard/hotel.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </graphic>
+      </Button>
+      <Button id="windows8" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="443.0" layoutY="160.0" mnemonicParsing="false" onAction="#checkin" prefHeight="206.0" prefWidth="216.0" style="-fx-background-radius: 20;" stylesheets="@dashboard.css">
+         <graphic>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="106.0" layoutX="26.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/Dashboard/check-in%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="32.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-In" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </graphic>
+      </Button>
+      <Button id="windows8" layoutX="821.0" layoutY="159.0" mnemonicParsing="false" onAction="#checkout" prefHeight="208.0" prefWidth="216.0" style="-fx-background-radius: 20;" stylesheets="@dashboard.css" AnchorPane.bottomAnchor="368.0" AnchorPane.leftAnchor="821.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="159.0">
+         <graphic>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="106.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/Dashboard/check-out%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="26.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-Out" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </graphic>
+      </Button>
+      <Button id="windows8" layoutX="65.0" layoutY="469.0" mnemonicParsing="false" onAction="#cusinfo" prefHeight="206.0" prefWidth="216.0" style="-fx-background-radius: 20;" stylesheets="@dashboard.css">
+         <graphic>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="106.0" layoutX="26.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/Dashboard/support.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="5.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cusotmer Info" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </graphic>
+      </Button>
+      <Button id="windows8" layoutX="443.0" layoutY="469.0" mnemonicParsing="false" onAction="#cusdetbill" prefHeight="206.0" prefWidth="216.0" style="-fx-background-radius: 20;" stylesheets="@dashboard.css">
+         <graphic>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="106.0" layoutX="26.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/Dashboard/invoice.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="26.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill Details" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </graphic>
+      </Button>
+      <Button id="windows8" layoutX="821.0" layoutY="469.0" mnemonicParsing="false" onAction="#mEmployee" prefHeight="206.0" prefWidth="216.0" style="-fx-background-radius: 20;" stylesheets="@dashboard.css">
+         <graphic>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="106.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/Dashboard/crowd.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="-15.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Employee" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </graphic>
+      </Button>
+      <Pane layoutX="2.0" layoutY="4.0" opacity="0.59" prefHeight="30.0" prefWidth="1102.0" style="-fx-background-color: #ECF0F1;" AnchorPane.bottomAnchor="705.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="dashExit" fitHeight="26.0" fitWidth="23.0" layoutX="1065.0" layoutY="3.0" onMouseClicked="#dash_exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/multiply.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="miniMise" fitHeight="26.0" fitWidth="23.0" layoutX="1029.0" layoutY="3.0" onMouseClicked="#minimise" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/minus-button.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Burj al Dhaka" />
+         </children></Pane>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="41.0" prefHeight="45.0" prefWidth="299.0" text="DASHBOARD" textAlignment="CENTER" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="Palatino Linotype Bold" size="35.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/dashboard.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

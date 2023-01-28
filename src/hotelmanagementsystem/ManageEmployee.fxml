@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="735.0" prefWidth="1101.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.ManageEmployeeController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1102.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/pexels-pixabay-258154%20(1).jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="863.0" layoutY="668.0" onAction="#back" prefHeight="41.0" prefWidth="216.0" ripplerFill="TRANSPARENT" style="-fx-background-radius: 15;" styleClass="linear-grad-to-top-left" stylesheets="@Style.css" text="BACK">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView blendMode="MULTIPLY" fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/icons8-double-left.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton id="b1" fx:id="ademployee" alignment="TOP_LEFT" buttonType="RAISED" layoutX="416.0" layoutY="248.0" onAction="#AddEmployee" prefHeight="60.0" prefWidth="362.0" ripplerFill="#ffffff00" style="-fx-border-radius: 10; -fx-border-color: #34465D; -fx-background-radius: 10; -fx-background-color: #90CAF9;" stylesheets="@Style.css" text="ADD EMPLOYEE" AnchorPane.leftAnchor="416.0" AnchorPane.topAnchor="248.0">
+         <graphic>
+            <ImageView blendMode="MULTIPLY" fitHeight="51.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Room/ezgif-1-eae3ee41dc.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Bookman Old Style" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="showEmployee" buttonType="RAISED" layoutX="416.0" layoutY="384.0" onAction="#showAllEmployee" prefHeight="64.0" prefWidth="362.0" ripplerFill="#ffffff00" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: #90CAF9; -fx-border-color: #34465D;" text="SHOW ALL EMPLOYEE" AnchorPane.leftAnchor="416.0" AnchorPane.topAnchor="384.0">
+         <font>
+            <Font name="Bookman Old Style" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView blendMode="MULTIPLY" fitHeight="51.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/ezgif-5-2348fead0c.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Pane fx:id="adEmployepane" layoutX="126.0" layoutY="119.0" opacity="0.83" prefHeight="529.0" prefWidth="851.0" style="-fx-background-color: #ECEFF1; -fx-background-radius: 20;" visible="false">
+         <children>
+            <Label layoutX="24.0" layoutY="140.0" text="Full Name">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font></Label>
+            <TextField fx:id="fullName" layoutX="145.0" layoutY="140.0" prefHeight="32.0" prefWidth="304.0" style="-fx-background-color: #B0BEC5; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #37474F;" />
+            <Label layoutX="24.0" layoutY="196.0" text="Age">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font></Label>
+            <Label layoutX="24.0" layoutY="252.0" text="Gender">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font></Label>
+            <TextField fx:id="age" layoutX="145.0" layoutY="196.0" prefHeight="32.0" prefWidth="304.0" style="-fx-background-color: #B0BEC5; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #37474F;" />
+            <ComboBox fx:id="gender" layoutX="145.0" layoutY="251.0" prefHeight="32.0" prefWidth="304.0" style="-fx-background-color: #B0BEC5; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #37474F;" />
+            <Label layoutX="24.0" layoutY="422.0" text="Job Type">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font></Label>
+            <ComboBox fx:id="jobType" layoutX="145.0" layoutY="421.0" prefHeight="32.0" prefWidth="304.0" style="-fx-background-color: #B0BEC5; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #37474F;" />
+            <Label layoutX="24.0" layoutY="309.0" text="NID No">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font></Label>
+            <TextField fx:id="nidNo" layoutX="145.0" layoutY="308.0" prefHeight="32.0" prefWidth="304.0" style="-fx-background-color: #B0BEC5; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #37474F;" />
+            <Label layoutX="24.0" layoutY="367.0" text="Email">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font></Label>
+            <TextField fx:id="mail" layoutX="145.0" layoutY="366.0" prefHeight="32.0" prefWidth="304.0" style="-fx-background-color: #B0BEC5; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #37474F;" />
+            <Label layoutX="24.0" layoutY="475.0" text="Salary">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font></Label>
+            <TextField fx:id="salary" layoutX="145.0" layoutY="474.0" prefHeight="32.0" prefWidth="304.0" style="-fx-background-color: #B0BEC5; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #37474F;" />
+            <Label layoutX="263.0" layoutY="18.0" text="Employee Appointment from">
+               <font>
+                  <Font name="Britannic Bold" size="35.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="494.0" layoutY="446.0" onAction="#cancel" prefHeight="36.0" prefWidth="125.0" style="-fx-border-color: #26A69A;" text="Cancel">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="685.0" layoutY="446.0" onAction="#submit" prefHeight="36.0" prefWidth="125.0" ripplerFill="TRANSPARENT" style="-fx-border-color: #26A69A;" text="Submit">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font></JFXButton>
+            <Label layoutX="24.0" layoutY="89.0" prefHeight="17.0" prefWidth="53.0" text="ID">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font></Label>
+            <TextField fx:id="eId" layoutX="145.0" layoutY="85.0" prefHeight="32.0" prefWidth="304.0" style="-fx-background-color: #B0BEC5; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #37474F;" />
+            <ImageView fitHeight="371.0" fitWidth="334.0" layoutX="494.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/employees.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane opacity="0.59" prefHeight="30.0" prefWidth="1102.0" style="-fx-background-color: #ECF0F1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="Exit" fitHeight="26.0" fitWidth="23.0" layoutX="1065.0" layoutY="3.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/multiply.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="miniMise" fitHeight="26.0" fitWidth="23.0" layoutX="1029.0" layoutY="3.0" onMouseClicked="#minimise" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/minus-button.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Burj al Dhaka" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="55.0" prefHeight="45.0" prefWidth="362.0" text="Manage Employee" textAlignment="CENTER">
+         <font>
+            <Font name="Palatino Linotype Bold" size="35.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/crowd.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Pane fx:id="tablepane" layoutX="112.0" layoutY="173.0" prefHeight="468.0" prefWidth="897.0" visible="false">
+         <children>
+            <TableView fx:id="employeeTable" layoutX="7.0" layoutY="15.0" prefHeight="450.0" prefWidth="878.0">
+               <columns>
+                  <TableColumn fx:id="col_id" prefWidth="58.0" text="ID" />
+                  <TableColumn fx:id="col_fullname" prefWidth="132.0" text="Full Name" />
+                  <TableColumn fx:id="col_age" prefWidth="70.0" text="Age" />
+                  <TableColumn fx:id="col_gender" prefWidth="82.0" text="Gender" />
+                  <TableColumn fx:id="col_jobtype" prefWidth="99.0" text="Job Type" />
+                  <TableColumn fx:id="col_salary" minWidth="9.0" prefWidth="98.0" text="Salary" />
+                  <TableColumn fx:id="col_NID" prefWidth="137.0" text="NID" />
+                  <TableColumn fx:id="col_email" prefWidth="201.0" text="Email" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane fx:id="titlepane" layoutX="120.0" layoutY="158.0" opacity="0.59" prefHeight="30.0" prefWidth="878.0" style="-fx-background-color: #ECF0F1;" visible="false">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="853.0" layoutY="3.0" onMouseReleased="#employee_exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/multiply.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="394.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Details" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

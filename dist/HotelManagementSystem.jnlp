@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="HotelManagementSystem.jnlp">
+  <information>
+    <title>HotelManagementSystem</title>
+    <vendor>Salman</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="HotelManagementSystem.jar" size="5634461" download="eager" />
+    <jar href="lib\activation.jar" size="124332" download="eager" />
+    <jar href="lib\itext.jar" size="1649151" download="eager" />
+    <jar href="lib\javax.mail-1.6.2.jar" size="659031" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\mail.jar" size="521000" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.27.jar" size="2475087" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="HotelManagementSystem" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="hotelmanagementsystem.HotelManagementSystem"  name="HotelManagementSystem" />
+  <update check="always"/>
+</jnlp>

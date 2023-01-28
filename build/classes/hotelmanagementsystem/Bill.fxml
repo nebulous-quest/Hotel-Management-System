@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.BillController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1102.0" opacity="0.84" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Pictures/executivesuitesea-room1%20(1).jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="BillTable" layoutX="16.0" layoutY="153.0" opacity="0.87" prefHeight="478.0" prefWidth="1071.0">
+         <columns>
+            <TableColumn fx:id="customer_id" prefWidth="75.0" text="Customer ID" />
+            <TableColumn fx:id="customer_name" prefWidth="105.00003051757812" text="Name" />
+            <TableColumn fx:id="customer_mobile" prefWidth="97.0" text="Mobile" />
+            <TableColumn fx:id="customer_email" prefWidth="130.0" text="Email" />
+            <TableColumn fx:id="checkindate" prefWidth="110.0" text="Check In Date" />
+            <TableColumn fx:id="checkoutdate" prefWidth="103.0" text="Check Out Date" />
+            <TableColumn fx:id="cusroom" prefWidth="77.0" text="Room No" />
+            <TableColumn fx:id="cusrmtype" prefWidth="68.0" text="Room type" />
+            <TableColumn fx:id="cusbedtype" prefWidth="85.0" text="Bed Type" />
+            <TableColumn fx:id="rmprice" prefWidth="67.0" text="Price" />
+            <TableColumn fx:id="cusstaydays" prefWidth="63.0" text="Stay Days" />
+            <TableColumn fx:id="bill_amount" prefWidth="94.0" text="Amount" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="63.0" prefHeight="45.0" prefWidth="490.0" text="All Customers Bill Details" textAlignment="CENTER">
+         <font>
+            <Font name="Palatino Linotype Bold" size="35.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/bill.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton layoutX="871.0" layoutY="672.0" onAction="#back" prefHeight="41.0" prefWidth="216.0" ripplerFill="TRANSPARENT" style="-fx-background-radius: 15;" styleClass="linear-grad-to-top-left" stylesheets="@Style.css" text="BACK">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView blendMode="MULTIPLY" fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/icons8-double-left.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Pane layoutX="22.0" layoutY="24.0" opacity="0.59" prefHeight="33.0" prefWidth="1102.0" style="-fx-background-color: #ECF0F1;" AnchorPane.bottomAnchor="735.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="exit" fitHeight="26.0" fitWidth="23.0" layoutX="1065.0" layoutY="5.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/multiply.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="miniMise" fitHeight="26.0" fitWidth="23.0" layoutX="1029.0" layoutY="5.0" onMouseClicked="#minimise" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Dashboard/minus-button.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Burj al Dhaka" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
